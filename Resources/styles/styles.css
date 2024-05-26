@@ -12,6 +12,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
 }
 
 .header-container h3{
@@ -68,3 +71,86 @@
     transition: 0.2s ease-in-out;
 }
 
+.hero-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 0.5fr repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    justify-content: space-between;
+    height: 89vh;
+    }
+    
+    .textarea { 
+        grid-area: 2 / 2 / 5 / 4; 
+    }
+
+    .textarea h4{
+        font-size: 12px;
+        color: #002133;
+    }
+
+    .textarea h2{
+        font-size: 28px;
+        color: #002133;
+        margin: 5px 0 20px 0;
+        line-height: 1.4em;
+    }
+
+    .textarea .one, .two{
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        padding: 5px 20px;
+        font-weight: 600;
+    }
+
+    .textarea .one{
+        border: 1px solid #000;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+
+    .textarea .two{
+        border: 1px solid #FFD703;
+        border-radius: 20px;
+        background-color: #FFD703;
+    }
+
+    .image-section-right { 
+        grid-area: 2 / 5 / 5 / 7; 
+    }
+
+    .image-section-right img{
+        width: 100%;
+        border-radius: 20px
+    }
+
+    .hero-container .yellow{
+        background: rgb(255,215,3);
+        background: radial-gradient(circle, rgba(255,215,3,1) 43%, rgba(255,255,255,0) 100%);
+        filter: blur(50px);
+        opacity: 0.2;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        position: absolute;
+        top: 220px;
+        right: 30px;
+        z-index: -1;
+    }
+
+    .hero-container .blue{
+        background: rgb(13, 172, 255);
+        background: radial-gradient(circle, rgba(13, 172, 255, 1) 43%, rgba(255,255,255,0) 100%);
+        filter: blur(50px);
+        opacity: 0.2;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        z-index: -1;
+    }
