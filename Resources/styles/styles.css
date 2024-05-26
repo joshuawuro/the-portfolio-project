@@ -1,346 +1,70 @@
 *{
+    font-family: 'montserrat';
+    font-size: 16px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header{
-    align-items: center;
-    justify-content: space-around;
+.header-container{
+    background-color: #fff;
+    box-shadow:0 2px 1px rgba(0, 0, 0, 0.25);
     display: flex;
-    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.zoe{
-    color: #FFDA1A;
+.header-container h3{
+    font-family: 'mortel';
+    margin-left: 10%;
+    letter-spacing: -1.5px;
 }
 
-.gen{
-    color: #84D5FF
-}
-
-.last-l{
+.header-container .blue{
     color: #0DACFF;
 }
-
-.logo h1{
-    letter-spacing: -2px;
-    font-size: 16px;
+.header-container .yellow{
+    color: #FFD703;
 }
 
-.nav ul{
+.header-container .black{
+    color: #000;
+}
+
+.header-container .green{
+    color: rgb(0, 128, 0);
+}
+
+.nav-container{
+    margin-right: 10%;
+}
+
+.nav-container ul{
     display: flex;
-}
-
-.nav ul li{
+    padding: 1rem;
     list-style: none;
-    margin-right: 10px;
-}
-
-.nav ul li a{
-    text-decoration: none;
-    font-family: 'lato';
-    font-size: 12px;
-    font-weight: bold;
-}
-
-/* HERO SECTION OF THE FLYER */
-
-.hero-section{
-    /* background-color: yellow; */
-}
-
-.hero-section-second{
-    display: flex;
+    justify-content: space-around;
     align-items: center;
-    max-width: 700px;
-    margin: 0 auto;
-    /* background-color: green; */
 }
 
-.hero-section-second .text-left{
-    max-width: 300px;
-    position: absolute;
-    font-family: 'lato';
+.nav-container li{
+    padding: 0 10px;
 }
 
-.hero-section-second .text-left h3{
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-.hero-section-second .text-left h1{
-    margin-bottom: 20px;
-}
-
-.hero-section-second .text-left .one{
+.nav-container a{
+    padding: 0.1rem 0;
     text-decoration: none;
-    border: 1px solid black;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    margin-right: 10px;
-    font-size: 10px;
-    color: #000;
-}
-
-.hero-section-second .text-left .one:hover{
-    cursor: pointer;
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-}
-
-.hero-section-second .text-left .two{
-    text-decoration: none;
-    border: 1px solid #FFDA1A;
-    background-color: #FFDA1A;
-    color: #000;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 10px;
-}
-
-.hero-section-second .text-left .one:hover{
-    cursor: pointer;
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-}
-
-.image-right{
-    position: relative;
-    right: -100px;
-    bottom: 30px;
-}
-
-
-/* SERVICES SECTION OF THE FLYER */
-
-.section-services{
-    margin-bottom: 50px;
-}
-
-.section-services-second{
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.section-services-second .text-sec{
-    font-family: 'red hat display';
-    color: #002336;
-
-}
-
-.section-services-second .text-sec h2{
-    margin-bottom: 30px;
-}
-
-.section-services-second .services{
-    display: flex;
-    font-family: 'red hat display';
-}
-
-.section-services-second .services .design{
-    background-color: #d6e8f05c;
-    margin-right: 10px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.section-services-second .services .design svg.sdesign{
-    background-color: #d3f0ff;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.section-services-second .services .Photography{
-    background-color: #d6e8f05c;
-    margin-right: 10px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.section-services-second .services .Photography svg.photo{
-    background-color: #FFD4D4;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.section-services-second .services .web{
-    background-color: #d6e8f05c;
-    /* margin-right: 20px; */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.section-services-second .services .web svg.sweb{
-    background-color: #FFF8D4;
-    ;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.section-services-second .services h3{
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.section-services-second .services p{
     font-size: 12px;
-}
-
-
-/* ABOUT ME SECTION OF THE WEBSITE */
-
-.section-about-me{
-    margin-bottom: 50px;
-}
-
-.section-about-me-second{
-    max-width: 700px;
-    margin: 0 auto;
-    font-family: 'red hat display';
-    color: #002336;
-}
-
-.section-about-me-second .text-sec h2{
-    margin-bottom: 30px;
-}
-
-.section-about-me-second .about-sec{
-    display: flex;
-}
-
-.section-about-me-second .about-sec img{
-    background: radial-gradient(circle, rgba(253,178,59,1) 50%, rgba(217,147,36,1) 100%);
-    padding:  0 20px;
-    width: 369.84px;
-    height: 280px;
-    margin-right: 20px;
-    border-radius: 10px;
-    /* max-width: 300px; */
-}
-
-.textarea p{
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-
-/* PORFOLIO SECTION OF THE WEBSITE*/
-
-.section-portfolio{
-    margin-bottom: 60px;
-}
-
-.section-portfolio-second{
-    max-width: 700px;
-    margin: 0 auto;
-    font-family: 'red hat display';
-}
-
-.section-portfolio-second .text-sec h2{
-    margin-bottom: 30px;
-}
-
-.porfolio-samples{
-    display: flex;
-}
-
-.portfolios img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.portfolios h3{
-    font-size: 12px;
-    color: #002336;
-    margin: 10px 0;
-}
-
-.portfolios a{
-    font-size: 12px;
-    text-decoration: none;
-    color: #007DBF;
     font-weight: bold;
-}
-
-
-/* BANNER SECTION OF THE FLYER */
-
-.section-banner{
-    background-color: #007DBF;
-    margin-bottom: 100px;
-}
-
-.section-banner-second{
-    max-width: 700px;
-    margin: 0 auto;
-    font-family: 'red hat display';
-    padding: 40px 0;
-}
-
-.section-banner-second h1{
-    color: #FFF;
-    margin-bottom: 20px;
-}
-
-.section-banner-second h4{
-    font-size: 12px;
-    font-weight: normal;
-    color: #FFF;
-}
-
-/* FOOTER SECTION OF THE WEBSITE */
-
-.section-footer{
-    background-color: #000;
-    padding: 50px;
-}
-
-.section-footer-second{
-    display: flex;
-    max-width: 700px;
-    margin: 0 auto;
-    color: #FFF;
-    font-family: 'lato';
-}
-
-
-.section-footer-second .left-sec{
-    display: flex;
-}
-.section-footer-second .left-sec img{
-    width: 10%;
-    height: 110%;
-    border-radius: 100%;
-    margin-right: 20px;
-}
-
-.section-footer-second .textsec h4{
-    font-size: 12px;
-    color: #A8A8A8;
-}
-
-.section-footer-second .right-sec a{
-    font-size: 12px;
-    text-decoration: none;
     color: #000;
-    background-color: #FFDA1A;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-weight: bold;
-} 
-
-.section-footer .foot{
-    max-width: 700px;
-    color: #A8A8A8;
-    font-size: 12px;
-    text-emphasis: center;
-    margin: 0 auto;
 }
 
-.section-footer .foot span{
-    color: #EE0606;
+#active{
+    border-bottom: 2px solid #0DACFF;
 }
+
+.nav-container a:hover{
+    border-bottom: 2px solid #0DACFF;
+    transition: 0.2s ease-in-out;
+}
+
