@@ -114,10 +114,23 @@
         background-color: #fff;
     }
 
+    .textarea .one:hover{
+        background-color: #000;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+    }
+
     .textarea .two{
         border: 1px solid #FFD703;
         border-radius: 20px;
         background-color: #FFD703;
+    }
+
+    .textarea .two:hover{
+        border: 1px solid #000;
+        color: #FFD703;
+        background-color: #000;
+        transition: 0.3s ease-in-out;
     }
 
     .image-section-right { 
@@ -160,12 +173,13 @@
     /* THE ABOUT ME SECTION OF THE WEBSITE */
     .about-me-parent-grid{
         display: grid;
-        grid-template-columns: 0.5fr 1fr 0.2fr 0.5fr 1fr 0.5fr;
-        grid-template-rows: 20px 40px repeat(2, 1fr) 20px;
+        grid-template-columns: 0.5fr 1fr repeat(2, 0.5fr) 1fr 0.5fr;
+        grid-template-rows: 1fr 40px repeat(2, 1fr) 1fr;
         grid-column-gap: 30px;
         grid-row-gap: 30px;
         background-color: #f4f4f4c8;
-        box-shadow:0 2px 1px rgba(0, 0, 0, 0.25);
+        box-shadow:0 1px 1px rgba(0, 0, 0, 0.25);
+        position: relative;
     }
 
     /* .about-me-parent-grid .about-blue{
@@ -227,4 +241,178 @@
     .about-me-summary a:hover{
         color: #fff;
         background-color: #000;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* PORTFOLIO SECTION OF THE WEBSITE */
+
+    .portfolio-parent-grid{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr repeat(2, 0.5fr) 1fr 0.5fr;
+        grid-template-rows: 0.8fr 40px repeat(2, 1fr) 0.8fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        background-color: #f4f4f4c8;
+        
+    }
+    
+    .portfolio-textarea{
+        grid-area: 2 / 2 / 3 / 5;
+    }
+
+    .portfolio-textarea h4{
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .portfolio-textarea h2{
+        font-size: 20px;
+    }
+
+    .portfolio-image-one{
+        grid-area: 3 / 2 / 5 / 4;
+    }
+
+    .portfolio-image-one img{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .portfolio-image-one h2{
+        font-size: 16px;
+    }
+
+    .portfolio-image-one a{
+        font-size: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .portfolio-image-one img:hover{
+        opacity: 0.5;
+    }
+
+    .portfolio-image-two{
+        grid-area: 3 / 4 / 5 / 6;
+    }
+
+    .portfolio-image-two img{
+        width: 100%;
+        margin: 18px 0;
+    }
+
+    .portfolio-image-two h2{
+        font-size: 16px;
+    }
+
+    .portfolio-image-two a{
+        font-size: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .portfolio-image-two img:hover{
+        opacity: 0.5;
+    }
+
+    
+
+    /* QUOTE SECTION OF THE FLYER */
+
+    .quote-section{
+        padding: 50px 0;
+        background-color: #0DACFF;
+        position: relative;
+    }
+
+    .quote-section-2{
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .quote-section-2 h2{
+        color: #fff;
+        font-size: 25px;
+        margin: 10px 0;
+    }
+
+    .quote-section-2 h4{
+        color: #FFD703;
+        font-size: 14px;
+        margin: 10px 0;
+        font-weight: 500;
+    }
+
+    /* TESTIMONIAL SECTION OF THE BROWSER */
+
+    .testimonial-parent{
+        max-width: 75%;
+        margin: 80px auto;
+    }
+
+    .testimonial-person{
+        display: flex;
+        align-items: center;
+    }
+
+    .testimonial-textarea h4{
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .testimonial-textarea h2{
+        font-size: 20px;
+    }
+
+    .testimonial-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    
+    .testimonial-container-one{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .testimonial-child-container{
+        max-width: 40%;
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 3px #00000063;
+    }
+
+    .testimonial-child-container p{
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .testimonial-person{
+        margin-top: 30px;
+    }
+
+    .testimonial-person img{
+        width: 50px;
+        height: 45px;
+        border-radius: 100%;
+    }
+
+    .testimonial-person .texts{
+        margin: 0 10px;
+    }
+
+    .testimonial-parent .texts h2{
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+
+    .testimonial-parent .texts h4{
+        font-size: 10px;
+        color: #959494;
     }
